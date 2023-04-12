@@ -1,5 +1,4 @@
 # data-structures
-
 Implementation of a HashMap using:
 1. Open Addressing
 2. Separate Chaining
