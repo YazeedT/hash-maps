@@ -4,7 +4,7 @@ Implementation of a HashMap using:
 2. Separate Chaining
 
 
-The HashMaps use implementations of the following necessary data structres:
+The HashMaps make use of the following included data structures in their implementations:
 1. DynamicArray
 2. LinkedList
 3. HashEntry
