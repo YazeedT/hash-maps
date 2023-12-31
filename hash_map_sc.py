@@ -229,39 +229,4 @@ class HashMap:
                 keys_and_values.append(tuple)
         
         return keys_and_values
-
-def find_mode(da: DynamicArray):
-    """
-    Gets the modes(s) and their frequency from values in array
-
-    Args:
-        da (DynamicArray): A tuple containing a DynamicArray of all mode(s) and an integer of their count
-    """
-    #Create a HashMap, modes array and mode variable
-    map = HashMap()
-    modes = DynamicArray()
-    mode_frequency = 0
-
-    #Go through da, and update the count of each element
-    for index in range(da.length()):
-        key = da[index]
-        count = map.get(key)
-        #If there is no key-value pair yet, then set count to 0 and increment to one in next line
-        if count is None:
-            count = 0
-        #Increment count and update the new value of the key
-        count += 1
-        map.put(key, count)
-        
-    #Checks and updates for count and mode_frequency
-        #If count is larger than mode_frequency; empty the DA, update count and append new value
-        if count > mode_frequency:
-            modes = DynamicArray()
-            mode_frequency = count
-            modes.append(key)
-        #If count is equal to mode_frequency, update the modes' array
-        elif count == mode_frequency:
-            modes.append(key)
-    
-    return (modes, mode_frequency)
- 
+      
