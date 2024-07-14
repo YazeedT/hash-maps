@@ -15,15 +15,6 @@ This repository contains an efficient implementation of HashMaps using two disti
 - **Open Addressing**: A collision resolution method using quadratic probing.
 - **Separate Chaining**: A collision resolution strategy using linked lists.
 
-## HashMap Implementations
-
-### Open Addressing (`hash_map_oa.py`)
-- **Quadratic Probing**: This file demonstrates an innovative approach to resolving hash collisions using quadratic probing.
-- **Dynamic Resizing**: Ensures the HashMap remains efficient regardless of the number of elements.
-
-### Separate Chaining (`hash_map_sc.py`)
-- **Efficient Collision Handling**: Separate chaining allows multiple values to be stored at the same hash index, reducing collision occurrence.
-- **Scalability**: Adapts well to a large number of entries, maintaining performance.
 
 ## Getting Started
 
